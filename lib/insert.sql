@@ -1,0 +1,6 @@
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "First Series", 1, 2), (2, "Second Series", 2, 3);
+INSERT INTO books (id, title, year, series_id) VALUES (1, "First Book", 1998, 1), (2, "Second Book", 1956, 3), (3, "Third Book", 1900, 2), (4, "Fourth Book", 1993, 3), (5, "Fifth Book", 1952, 5), (6, "Sixth Book", 2005, 5);
+INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (1, "First Character", "First Motto", "human", 1, 1), (2, "Second Character", "Second Motto", "human", 1, 1), (3, "Third Character", "Third Motto", "human", 1, 1), (4, "Fourth Character", "Fourth Motto", "human", 1, 1), (5, "Fifth Character", "Fifth Motto", "human", 2, 2), (6, "Sixth Character", "Sixth Motto", "human", 2, 2), (7, "Seventh Character", "Seventh Motto", "human", 2, 2), (8, "Eighth Character", "Eighth Motto", "human", 2, 2);
+INSERT INTO subgenres (id, name) VALUES (1, "Subgenre 1"), (2, "Subgenre 2");
+INSERT INTO authors (id, name) VALUES (1, "First Author"), (2, "Second Author");
+INSERT INTO character_books (id, book_id, character_id) VALUES (1, 1, 1), (2, 1, 2), (3, 2, 2), (4, 3, 2), (5, 1, 3), (6, 2, 3), (7, 3, 3), (8, 1, 4), (9, 4, 5), (10, 4, 6), (11, 5, 6), (12, 6, 6), (13, 4, 7), (14, 5, 7), (15, 6, 7), (16, 4, 8);
